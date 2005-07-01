@@ -1,0 +1,31 @@
+# See https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes
+
+# Auto detect text files and perform LF normalization
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c   text
+*.cpp text
+*.h   text
+*.hpp text
+*.m   text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Declare files that will always have LF line endings on checkout.
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+*.cbp          text eol=lf
+*.workspace    text eol=lf 
+
+# Denote all files that are truly binary and should not be modified.
+*.nb  binary
+*.mx  binary
+*.png binary
+*.jpg binary
+*.bin binary
+*.dat binary
+
